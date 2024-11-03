@@ -47,5 +47,7 @@ resource registry 'Microsoft.ContainerRegistry/registries@2023-07-01' = {
 // --------------------------------------------------------------------------------
 @description('Resource id of Azure Container Registry.')
 output resourceId string = registry.id
+@description('Resource name of Azure Container Registry.')
+output name string = registry.name
 @description('Domain name of Azure Container Registry.')
 output loginServer string = registry.properties.loginServer

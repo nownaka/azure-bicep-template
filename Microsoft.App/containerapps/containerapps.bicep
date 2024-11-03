@@ -80,3 +80,5 @@ resource containerapp 'Microsoft.App/containerApps@2024-03-01' = {
 // --------------------------------------------------------------------------------
 @description('Resource Id of Azure Container App.')
 output resourceId string = containerapp.id
+@description('Resource name of Azure Container App.')
+output name string = containerapp.name
