@@ -15,14 +15,13 @@ param tags object = {}
 @description('The SKU of the workspace.')
 @allowed([
   'CapacityReservation'
-  'Free'
   'LACluster'
   'PerGB2018'
   'PerNode'
   'Premium'
   'Standalone'
   'Standard'])
-param workspaceSkuName string = 'Free'
+param workspaceSkuName string = 'PerGB2018'
 
 
 // --------------------------------------------------------------------------------
