@@ -15,7 +15,7 @@ param principalId string
 // Variables
 // --------------------------------------------------------------------------------
 @description('The resource name')
-var roleAssignmentName= guid(principalId, roleDefinitionId, resourceGroup().id)
+var roleAssignmentName = guid(principalId, roleDefinitionId, resourceGroup().id)
 
 
 // --------------------------------------------------------------------------------
